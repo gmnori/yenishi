@@ -1,0 +1,34 @@
+<div class="container-body">
+<h3>メニュー</h3>
+<ul class="menu-ul">
+      <li class="menu-list-item"> <%= link_to '/menu/lunch' do %>
+      <%= image_tag "deer_loast.jpg", width: '295', alt: '鹿のロースト丼', class:'menu-image' %>
+      ランチメニュー
+      <% end %> </li>  
+      
+      <li class="menu-list-item"> <%= link_to '/menu/dinnerteishoku' do %>
+      <%= image_tag "maguro_don.jpg", width: '295', alt: 'まぐろ中落ち丼', class:'menu-image' %>
+      夜の定食
+      <% end %> </li>  
+
+      <li class="menu-list-item"> <%= link_to '/menu/ippin' do %>
+      <%= image_tag "sashimi.jpg", width: '295', alt: '刺身盛り合わせ', class:'menu-image' %>
+      一品料理
+      <% end %> </li>
+
+      <li class="menu-list-item"> <%= link_to '/menu/drink' do %>
+      <%= image_tag "sake.jpg", width: '295', alt: 'ドリンクメニュー', class:'menu-image' %>
+      ドリンクメニュー
+      <% end %> </li>
+
+      <li class="menu-list-item"> <%= link_to '/menu/dessert' do %>
+      <%= image_tag "ice.jpg", width: '295', alt: 'デザート', class:'menu-image' %>
+      デザート
+      <% end %> </li>
+
+      <li class="menu-list-item"> <%= link_to '/menu/party' do %>
+      <%= image_tag "deer_fly.jpg", width: '295', alt: '宴会コース', class:'menu-image' %>
+      宴会メニュー
+      <% end %> </li>
+</ul>
+</div>

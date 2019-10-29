@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ゑにし -大間直送の海鮮と八ヶ岳ジビエの店-</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="navbar navbar-fixed-top navbar-header">
+    <div class="container">
+      <ul class="head-list-ul">
+        <li class="head-list-logo"> <%= link_to "ゑにし", '/index', id: "logo" %> </li>
+        <li class="head-list-item"> <%= link_to " コンセプト", "/about" %> </li>
+        <li class="head-list-item"> <%= link_to "メニュー", "/menu/index" %> </li>
+        <li class="head-list-item"> <%= link_to "アクセス", "/access" %> </li>  
+        <li class="head-list-item"> <%= link_to "公式Twitter", "/twitter" %> </li>
+      </ul>
+    </div>
+  </header>
+ 
+    <%= yield %>
+  </body>
+</html>

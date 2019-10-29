@@ -1,0 +1,281 @@
+// @import 'bootstrap'
+// @import “./top; 
+// @import “./menu;
+// @import “./access;
+// @import “./twitter;
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+}
+
+.container {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #006600;
+}
+
+.head-list-ul {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.head-list-item {
+    font-size: 18px;
+    font-family: 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, "メイリオ";
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 15%;
+    padding: 5px 0 5px 0;
+    border-right: 1px solid;
+    color: #fff;
+    text-decoration: none;
+}
+
+.head-list-logo {
+    font-size: 18px;
+    font-family: 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, "メイリオ";
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 15%;
+    padding: 5px 0 5px 0;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: #fff;
+    text-decoration: none;
+}
+
+.head-list-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.head-list-item:hover {
+    border-bottom: 3px #ffd solid;
+    background-color: #008800;
+    transition: 0.2s;
+}
+
+.head-list-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.head-list-logo:hover {
+    border-bottom: 3px #ffd solid;
+    background-color: #008800;
+    transition: 0.2s;
+}
+
+
+// Body部分のCSS
+
+.container-body {
+    margin: 60px auto 0 auto;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-ul {
+    padding-inline-start: 0;
+    justify-content: space-between;
+    display: inline-block;
+    left: 50%;
+}
+
+.menu-list-item {
+    width: 300px;
+    height: 300px;
+    // float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 3px auto;
+    background-color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    left: -50%;
+}
+
+.menu-list-item a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-list-item:hover {
+    border: 3px #008800 solid;
+    opacity: 0.7;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+.menu-ul {
+    text-align: center;
+}
+
+.menu-image {
+    width: 295px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.index_table {
+    margin: 0 auto;
+}
+
+// Top  詳細
+.top-image {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 2px 2px 2px 2px rgba(63, 63, 63, 0.6) inset;
+    border-radius: 5px;
+    background-position: bottom left;
+}
+
+// Menu 詳細
+li {
+    list-style: none;
+}
+
+.menu-box {
+    width: 70%;
+    // height: 30px;
+    margin: 0 15%;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.menu-box:hover {
+    border-bottom: 2px #006600 solid;
+}
+
+.menu-name {
+    width: 420px;
+}
+
+.menu-description {
+    width: 80px;
+}
+
+.menu-price {
+    width: 100px;
+    text-align: center;
+}
+
+.menu-link {
+    font-size: 13px;
+    text-align: left;
+    margin: 0 20%;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-link a:hover {
+    border-bottom: 1px solid;   
+}
+
+
+// Twitter埋め込み
+
+.twitter-link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.twitter-link a:hover {
+    border-bottom: 1px solid;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu-list-item {
+        margin: 3px auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .head-list-item {
+        font-size: 14px;
+        padding: 10px 0 5px 0;
+    }
+
+    .head-list-logo {
+    font-size: 14px;
+    padding: 10px 0 5px 0;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+    
+    .container {
+        height: 30px;
+    }
+    
+    .container-body {
+        margin: 40px auto 0 auto;
+    }
+
+    .head-list-item {
+        font-size: 10.5px;
+        padding: 10px 0 5px 0;
+    }
+
+    .head-list-logo {
+    font-size: 10.5px;
+    padding: 10px 0 5px 0;
+    }
+
+    .top-image {
+        height: 300px;
+    }
+    .menu-link {
+        font-size: 10.5px;
+        text-align: left;
+        margin: 0 20%;
+    }
+
+    .menu-list-item {
+        font-size: 12px;
+        height: 200px;
+    }
+
+    .menu-image {
+        height: 150px;
+    }
+}
